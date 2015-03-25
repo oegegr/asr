@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" action="">
+    {{ form.hidden_tag() }}
+    <label>choose the manufacturer:</label>
+    {{ form.manufacturer }}
+    <label>enter model of the printer:</label>
+    {{ form.model }}
+    <label>choose color:</label>
+    {{ form.color }}
+    <input type="submit" value="add printer">
+</form>
+
+{% endblock %}

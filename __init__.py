@@ -13,4 +13,5 @@ migrate = Migrate(app, db)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
-from app import views
+from app import models, views
+
